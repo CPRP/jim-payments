@@ -8,7 +8,7 @@ Config = {}
 
 Config.Debug = false
 
-Config.Manage = false -- "true" if using qb-management
+Config.Manage = true -- "true" if using qb-management
 					 -- "false" if using qb-bossmenu
 					
 Config.TicketSystem = true -- Enable this if you want to use the ticket system false
@@ -34,10 +34,10 @@ Config.PedPool = {
 	[14] = `U_F_M_CasinoShop_01`,
 }
 
-Config.Gabz = true -- "true" to enable Gabz Banking locations
+Config.Gabz = false -- "true" to enable Gabz Banking locations
 Config.useATM = true -- Enable this to use my ATM's
 Config.useBanks = true -- Enable this to use my banking stuff
-Config.BankBlips = true -- Enable this if you disabled qb-banking and need bank locations
+Config.BankBlips = false -- Enable this if you disabled qb-banking and need bank locations
 Config.ATMBlips = false -- Enable this if you are a pyscho and need every ATM to be on the map too
 
 Config.PhoneBank = true -- Set this to false to use the popup payment system FOR CARD/BANK PAYMENTS instead of using phone invoices
