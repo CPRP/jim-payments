@@ -48,10 +48,10 @@ Config.PhoneType = "qb" -- Change this setting to make invoices work with your p
 						-- "qb" for qb-phone
 						-- "gks"" for GKSPhone
 
-Config.Commission = false -- Set this to true to enable Commissions and give the person charging a percentage of the total
+Config.Commission = true -- Set this to true to enable Commissions and give the person charging a percentage of the total
 Config.CommissionAll = false -- Set this to true to give commission to workers clocked in
 Config.CommissionDouble = false -- Set this to true if you want the person charging to get double Commission
-Config.CommissionLimit = false -- If true, this limits the Commission to only be given if over the "MinAmountForTicket". If false, Commission will be given for any amount
+Config.CommissionLimit = true -- If true, this limits the Commission to only be given if over the "MinAmountForTicket". If false, Commission will be given for any amount
 
 -- MinAmountforTicket should be your cheapest item
 -- PayPerTicket should never be higher than MinAmountforTicket
@@ -61,15 +61,15 @@ Config.CashInLocation = vector4(252.23, 223.11, 106.29, 159.2) -- Default Third 
 if Config.Gabz then Config.CashInLocation = vector4(269.28, 217.24, 106.28, 69.0) end	-- Middle along in Pacific Bank (Gabz)
 
 Config.Jobs = {
-	['beanmachine'] = { MinAmountforTicket = 50, PayPerTicket = 50, Commission = 0.10, },
-	['burgershot'] = { MinAmountforTicket = 50, PayPerTicket = 50 , Commission = 0.10,},
-	['catcafe'] = { MinAmountforTicket = 50, PayPerTicket = 50, Commission = 0.10, },
-	['henhouse'] = { MinAmountforTicket = 50, PayPerTicket = 50, Commission = 0.10, },
-	['pizzathis'] = { MinAmountforTicket = 50, PayPerTicket = 50, Commission = 0.10, },
-	['popsdiner'] = { MinAmountforTicket = 50, PayPerTicket = 50, Commission = 0.10, },
-	['tequilala'] = { MinAmountforTicket = 50, PayPerTicket = 50, Commission = 0.10, },
-	['vanilla'] = { MinAmountforTicket = 50, PayPerTicket = 50, Commission = 0.10, },
-	['mechanic'] = { MinAmountforTicket = 1000, PayPerTicket = 500, Commission = 0.10, },
+	['beanmachine'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.10, },
+	['burgershot'] = { MinAmountforTicket = 25, PayPerTicket = 50 , Commission = 0.10,},
+	['catcafe'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.10, },
+	['henhouse'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.10, },
+	['pizzathis'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.10, },
+	['popsdiner'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.10, },
+	['tequilala'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.10, },
+	['vanilla'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.10, },
+	['mechanic'] = { MinAmountforTicket = 500, PayPerTicket = 250, Commission = 0.10, },
 }
 
 Config.ATMModels = {"prop_atm_01", "prop_atm_02", "prop_atm_03", "prop_fleeca_atm" }
