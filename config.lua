@@ -1,4 +1,4 @@
-print("Jim-Payments v2.5 - Payments Script by Jimathy")
+print("Jim-Payments v2.6 - Payments Script by Jimathy")
 
 -- If you need support I now have a discord available, it helps me keep track of issues and give better support.
 
@@ -70,6 +70,7 @@ Config.Jobs = {
 	['tequilala'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.10, },
 	['vanilla'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.10, },
 	['mechanic'] = { MinAmountforTicket = 500, PayPerTicket = 250, Commission = 0.10, },
+	['lostmc'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.10, gang = true },
 }
 
 Config.ATMModels = {"prop_atm_01", "prop_atm_02", "prop_atm_03", "prop_fleeca_atm" }
