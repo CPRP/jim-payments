@@ -71,6 +71,7 @@ Config.Jobs = {
 	['vanilla'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.10, },
 	['mechanic'] = { MinAmountforTicket = 500, PayPerTicket = 250, Commission = 0.10, },
 	['lostmc'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.10, gang = true },
+	['police'] = { MinAmountforTicket = 500, PayPerTicket = 500, Commission = 0.10, },
 }
 
 Config.ATMModels = {"prop_atm_01", "prop_atm_02", "prop_atm_03", "prop_fleeca_atm" }
