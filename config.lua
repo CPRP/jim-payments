@@ -83,7 +83,7 @@ Config = {
 		['police'] = { Commission = 0.25, },
 		['ambulance'] = { Commission = 0.25, },
 	},
-	FineJobConfirmation = true, --"true" makes it so fines need confirmation, "false" skips this ands just removes the money
+	FineJobConfirmation = false, --"true" makes it so fines need confirmation, "false" skips this ands just removes the money
 	FineJobList = true, -- "true" to use nearby player list feature in the cash registers, "false" for manual id entry
 
 	ATMModels = { "prop_atm_01", "prop_atm_02", "prop_atm_03", "prop_fleeca_atm" },
