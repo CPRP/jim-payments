@@ -58,15 +58,15 @@ Config = {
 	-- PayPerTicket should never be higher than MinAmountforTicket
 	-- Commission is a percentage eg "0.10" becomes 10%
 	Jobs = {
-		['beanmachine'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.10, },
-		['burgershot'] = { MinAmountforTicket = 25, PayPerTicket = 50 , Commission = 0.10, },
-		['catcafe'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.10, },
-		['henhouse'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.10, },
-		['pizzathis'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.10, },
-		['popsdiner'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.10, },
-		['tequilala'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.10, },
-		['vanilla'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.10, },
-		['mechanic'] = { MinAmountforTicket = 500, PayPerTicket = 250, Commission = 0.10, },
+		['beanmachine'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.20, },
+		['burgershot'] = { MinAmountforTicket = 25, PayPerTicket = 50 , Commission = 0.20, },
+		['catcafe'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.20, },
+		['henhouse'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.20, },
+		['pizzathis'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.20, },
+		['popsdiner'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.20, },
+		['tequilala'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.20, },
+		['vanilla'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.20, },
+		['mechanic'] = { MinAmountforTicket = 500, PayPerTicket = 250, Commission = 0.20, },
 		['lostmc'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.10, gang = true, }, -- Example of a gang being supported
 	},
 
