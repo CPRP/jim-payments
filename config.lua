@@ -46,12 +46,12 @@ Config = {
 	CashInLocation = vector4(252.23, 223.11, 106.29, 159.2), -- Default Third Window along in Pacific Bank
 
 	TicketSystem = true, -- Enable this if you want to use the ticket system false
-	TicketSystemAll = true, -- Enable this to give tickets to all workers clocked in
+	TicketSystemAll = false, -- Enable this to give tickets to all workers clocked in
 
 	Commission = true, -- Set this to true to enable Commissions and give the person charging a percentage of the total
 	CommissionAll = false, -- Set this to true to give commission to workers clocked in
 	CommissionDouble = false, -- Set this to true if you want the person charging to get double Commission
-	CommissionLimit = true,	-- If true, this limits the Commission to only be given if over the "MinAmountForTicket".
+	CommissionLimit = false,	-- If true, this limits the Commission to only be given if over the "MinAmountForTicket".
 								-- If false, Commission will be given for any amount
 
 	-- MinAmountforTicket should be your cheapest item
@@ -66,7 +66,7 @@ Config = {
 		['popsdiner'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.20, },
 		['tequilala'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.20, },
 		['vanilla'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.20, },
-		['mechanic'] = { MinAmountforTicket = 500, PayPerTicket = 250, Commission = 0.20, },
+		['mechanic'] = { MinAmountforTicket = 500, PayPerTicket = 500, Commission = 0.20, },
 		['lostmc'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.10, gang = true, }, -- Example of a gang being supported
 	},
 
