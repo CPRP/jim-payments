@@ -1,4 +1,4 @@
-print("^2Jim^7-^2Payments ^7v^42^7.^48^7.^43 ^7- ^2Payments Script by ^1Jimathy^7")
+print("^2Jim^7-^2Payments v^42^7.^48 ^7- ^2Payments Script by ^1Jimathy^7")
 
 -- If you need support I now have a discord available, it helps me keep track of issues and give better support.
 
@@ -8,15 +8,11 @@ Config = {
 	Lan = "en",
 	Debug = false,
 	Notify = "qb",
-
 	---------------------------------
 	-- Default Job Payment Systems --
 	---------------------------------
-	Manage = true, 	-- "true" if using qb-management
-					-- "false" if using qb-bossmenu
-
-	RenewedBanking = false, -- Enable if using Renewed-Banking (requires Manage to be true and leaving jim-payments banking part separate)
-	ApGov = false, -- Toggle support for AP-Goverment Tax
+	Manage = true, -- "true" if using qb-management
+				-- "false" if using qb-bossmenu
 
 	List = true, -- "true" to use nearby player list feature in the cash registers, "false" for manual id entry
 	PaymentRadius = 15, -- This is how far the playerlist will check for nearby players (based on the person charging)
@@ -39,7 +35,7 @@ Config = {
 		`U_F_M_CasinoShop_01`,
 	},
 
-	PhoneBank = false, 	-- Set this to false to use the popup payment system FOR CARD/BANK PAYMENTS instead of using phone invoices
+	PhoneBank = false, -- Set this to false to use the popup payment system FOR CARD/BANK PAYMENTS instead of using phone invoices
 						-- This doesn't affect Cash payments as they by default use confirmation now
 						-- This is helpful for phones that don't support invoices well
 
@@ -62,16 +58,16 @@ Config = {
 	-- PayPerTicket should never be higher than MinAmountforTicket
 	-- Commission is a percentage eg "0.10" becomes 10%
 	Jobs = {
-		['beanmachine'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.20, },
-		['burgershot'] = { MinAmountforTicket = 25, PayPerTicket = 50 , Commission = 0.20, },
-		['catcafe'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.20, },
-		['henhouse'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.20, },
-		['pizzathis'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.20, },
-		['popsdiner'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.20, },
-		['tequilala'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.20, },
-		['vanilla'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.20, },
+		['beanmachine'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
+		['burgershot'] = { MinAmountforTicket = 5, PayPerTicket = 100 , Commission = 0.20, },
+		['catcafe'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
+		['henhouse'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
+		['pizzathis'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
+		['popsdiner'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
+		['tequilala'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
+		['vanilla'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
 		['mechanic'] = { MinAmountforTicket = 500, PayPerTicket = 500, Commission = 0.20, },
-		['lostmc'] = { MinAmountforTicket = 25, PayPerTicket = 50, Commission = 0.10, gang = true, }, -- Example of a gang being supported
+		['lostmc'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.10, gang = true, }, -- Example of a gang being supported
 	},
 
 	------------------------------
@@ -92,6 +88,7 @@ Config = {
 	FineJobConfirmation = false, --"true" makes it so fines need confirmation, "false" skips this ands just removes the money
 	FineJobList = true, -- "true" to use nearby player list feature in the cash registers, "false" for manual id entry
 
+	ApGov = false, -- Add support for AP-Goverment Tax
 	---------------------
 	-- Banking Systems --
 	---------------------
