@@ -69,8 +69,18 @@ Config = {
 		['popsdiner'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
 		['tequilala'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
 		['vanilla'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
+		['bestbuds'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
+		-- ['cardealer'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
+		-- ['sanders'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
+		-- ['vanilla'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
+		-- ['sandybs'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
+		-- ['mirrorparkbs'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
+		-- ['upnatom'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
+		-- ['casino'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
 		['mechanic'] = { MinAmountforTicket = 500, PayPerTicket = 500, Commission = 0.20, },
-		['lostmc'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.10, gang = true, }, -- Example of a gang being supported
+		['lostmc'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.10, gang = true, },  -- Example of a gang being supported
+		-- ['yellowgang'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.10, gang = true, },
+		-- ['demons'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.10, gang = true, },
 	},
 
 	------------------------------
@@ -78,8 +88,11 @@ Config = {
 	------------------------------
 	-- This adds the ability to add multiple locations for each job
 	-- Basically adding ready made locations, all you need to a vector4 and to confrim if you need a new prop in that location
-    CustomCashRegisters = {
-
+	CustomCashRegisters = {
+        ["bestbuds"] = { -- Player job role restriction
+            { coords = vector4(380.24, -827.33, 29.29, 180.0), prop = false, }, -- vector4 to place the till and the way it faces
+            { coords = vector4(375.55, -827.33, 29.29, 180.0), prop = false, }, -- "prop = true" spawns a prop at the coords
+		},
 	},
 
 	-- The /polcharge command requires specific jobs to be set
@@ -97,7 +110,7 @@ Config = {
 	useATM = true, -- Enable this to use the scripts ATM's and controls
 	useBanks = true, -- Enable this to use my banking stuff
 	BankBlips = true, -- Enable this if you disabled qb-banking and need bank locations
-	ATMBlips = true, -- Enable this if you are a pyscho and need every ATM to be on the map too
+	ATMBlips = false, -- Enable this if you are a pyscho and need every ATM to be on the map too
 
 	Gabz = false, 	-- "true" to enable Gabz Bank locations
 					-- this corrects the ATM/Bank Cashier + Ticket Cash in location
