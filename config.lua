@@ -1,4 +1,4 @@
-print("^2Jim^7-^2Payments ^7v^42^7.^48^7.^44 ^7- ^2Payments Script by ^1Jimathy^7")
+print("^2Jim^7-^2Payments ^7v^42^7.^48^7.^45 ^7- ^2Payments Script by ^1Jimathy^7")
 
 -- If you need support I now have a discord available, it helps me keep track of issues and give better support.
 
@@ -69,7 +69,8 @@ Config = {
 		['popsdiner'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
 		['tequilala'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
 		['vanilla'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
-		['bestbuds'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
+		['bestbuds'] = { MinAmountforTicket = 5, PayPerTicket = 300, Commission = 0.20, },
+		['whitewidow'] = { MinAmountforTicket = 5, PayPerTicket = 300, Commission = 0.20, },
 		-- ['cardealer'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
 		-- ['sanders'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
 		-- ['vanilla'] = { MinAmountforTicket = 5, PayPerTicket = 100, Commission = 0.20, },
