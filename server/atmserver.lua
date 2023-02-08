@@ -267,3 +267,4 @@ RegisterServerEvent("jim-payments:server:ATM:give", function(citizen, price)
 		end
 	else triggerNotify(nil, Loc[Config.Lan].error["zero"], 'error', source) end
 end)
+
